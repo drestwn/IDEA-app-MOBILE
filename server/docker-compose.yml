@@ -1,0 +1,26 @@
+services:
+  app-service:
+    build: ./services/app
+    container_name: app
+    ports:
+      - "4002:4002"
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+  user-service:
+    build: ./services/users
+    container_name: users
+    ports:
+      - "4001:4001"
+    environment:
+      - PASSWORD_MONGODB=${PASSWORD_MONGODB}
+  orchestrator-service:
+    build: ./orchestrator-graphql
+    container_name: orchestratorGraphql
+    ports:
+      - "80:4000"
+    environment:
+      - PORT=4000
+      - BASE_URL_USERS=${BASE_URL_USERS}
+      - BASE_URL_APP=${BASE_URL_APP}
+      - BASE_PORT_REDIS=${BASE_PORT_REDIS}
+      - BASE_URL_REDIS=${BASE_URL_REDIS}

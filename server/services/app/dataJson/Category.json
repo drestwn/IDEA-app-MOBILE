@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Fashion"
+  },
+  {
+    "id": 2,
+    "name": "Home & Decor"
+  },
+  {
+    "id": 3,
+    "name": "Kitchen & Dining"
+  },
+  {
+    "id": 4,
+    "name": "Electronics"
+  },
+  {
+    "id": 5,
+    "name": "Sports & Outdoors"
+  }
+]
