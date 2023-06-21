@@ -16,6 +16,6 @@ run npx sequelize db:migrate
 run npx sequelise db:seed:all
 
 if all is runing smooth,
-then npx nodemon app.js to start the server
+then npx nodemon app.js to start the server both on app and user folder
 
 Feel free to contac me for the following project.
