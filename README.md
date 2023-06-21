@@ -2,6 +2,7 @@
 
 To run the application of "client-mobile"
 please make a .env file with BASE_URL_APOLLO=http://localhost:4000
+then expo start and select your simulator
 
 Then get into the folder's terminal and npm install,
 to start use "npm run start"
